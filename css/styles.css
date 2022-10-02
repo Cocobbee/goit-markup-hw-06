@@ -747,6 +747,38 @@ img {
     background-color: var(--sky);
 }
 
+/* Suscribe info */
+
+.btn-suscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0px;
+    width: 216px;
+    /* height: 50px; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    padding: 10px;
+
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--regular-white);
+    background-color: var(--sky);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    transition: background-color 250ms var(--timing-function);
+}
+
+.btn-suscribe:hover,
+.btn-suscribe:focus {
+    background-color: var(--dark-sky);
+}
+
 /* Modal window */
 .backdrop {
     position: fixed;
@@ -818,6 +850,7 @@ img {
 }
 
 .modal-title {
+    font-weight: 700;
     font-size: 20px;
     text-align: center;
     letter-spacing: 0.03em;
@@ -849,7 +882,8 @@ img {
     border-radius: 4px;
 }
 
-.modal-info-box, .comment-box {
+.modal-info-box,
+.comment-box {
     resize: none;
     width: 100%;
 }
@@ -861,7 +895,14 @@ img {
 .permission-link {
     color: var(--sky);
     text-decoration: underline;
+    transition: color 250ms var(--timing-function);
 }
+
+.permission-link:hover,
+.permission-link:focus {
+    color: var(--dark-sky);
+}
+
 
 .submit-btn {
     display: flex;
@@ -886,4 +927,9 @@ img {
     border-radius: 4px;
     border: none;
     transition: background-color 250ms var(--timing-function);
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+    background-color: var(--dark-sky);
 }
