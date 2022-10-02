@@ -751,7 +751,7 @@ img {
 .suscribe-list {
     display: flex;
     padding-top: 0px;
-    gap: 10px;
+    gap: 12px;
     list-style: none;
 }
 
