@@ -749,6 +749,31 @@ img {
 
 /* Suscribe info */
 
+.suscribe-title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--regular-white);
+}
+
+.suscribe-list {
+    display: flex;
+    padding-top: 0px;
+    gap: 10px;
+    list-style: none;
+}
+
+.suscribe-info-box {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    background-color: var(--motto-back-color)
+}
+
 .btn-suscribe {
     display: flex;
     align-items: center;
