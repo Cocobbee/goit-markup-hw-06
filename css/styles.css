@@ -844,13 +844,18 @@ img {
     margin-bottom: 28px;
 }
 
-.form-permission {
-    margin-bottom: 30px;
+.modal-info-box {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
 }
 
-.modal-comment {
+.modal-info-box, .comment-box {
     resize: none;
     width: 100%;
+}
+
+.form-permission {
+    margin-bottom: 30px;
 }
 
 .permission-link {
