@@ -812,3 +812,73 @@ img {
 .modal-btn:focus {
     background-color: var(--regular-white);
 }
+
+.form {
+    margin: 40px;
+}
+
+.modal-title {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
+
+.modal-info,
+.comment,
+.permission {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: var(--text-grey);
+}
+
+.main-form-field {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 28px;
+}
+
+.form-permission {
+    margin-bottom: 30px;
+}
+
+.modal-comment {
+    resize: none;
+    width: 100%;
+}
+
+.permission-link {
+    color: var(--sky);
+    text-decoration: underline;
+}
+
+.submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 216px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--regular-white);
+    background-color: var(--sky);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    transition: background-color 250ms var(--timing-function);
+}

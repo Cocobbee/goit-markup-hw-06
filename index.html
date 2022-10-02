@@ -365,12 +365,56 @@
   <!-- Modal window -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
+
       <button class="modal-btn" type="button" data-modal-close><svg class="close-icon" width="11" height="11">
           <use href="./images/sprite.svg#icon-close"></use>
         </svg></button>
+
+      <form class="form js-clients-form">
+
+        <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
+
+        <div class="main-form-field">
+        <div class="form-field"><label class="modal-info" for="name">Ім'я</label>
+          <input type="text" name="name" id="name" autofocus />
+        </div>
+        <div class="form-field"><label class="modal-info" for="tel">Телефон</label>
+          <input type="tel" name="tel" id="tel" autocomplete="off" />
+        </div>
+        <div class="form-field"><label class="modal-info" for="email">Пошта</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="form-field"> <label class="comment" for="comment">Коментар</label>
+          <textarea class="modal-comment" name="comment" id="comment"></textarea>
+        </div>
+      </div>
+
+        <div class="form-permission"> <input type="checkbox" name="permission" id="permission"
+            placeholder="Введіть текст" />
+          <label class="permission" for="permission">Погоджуюся з
+            розсилкою та приймаю <span><a class="permission-link" href="#">Умови договору</a></span></label>
+        </div>
+
+        <button class="submit-btn" type="submit">Відправити</button>
+      </form>
     </div>
   </div>
   <script src="js/modal.js"></script>
+  <script>
+    (() => {
+      document
+        .querySelector('.js-clients-form')
+        .addEventListener('submit', e => {
+          e.preventDefault();
+
+          new FormData(e.currentTarget).forEach((value, name) =>
+            console.log('${value}'),
+          );
+
+          e.currentTarget.reset();
+        });
+    })();
+  </script>
 </body>
 
 </html>
