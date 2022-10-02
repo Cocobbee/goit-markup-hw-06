@@ -87,7 +87,7 @@ img {
     padding-bottom: 24px;
 }
 
-.logo-web-header {
+.logo-web {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -651,16 +651,6 @@ img {
 
 .contacts-footer-item:not(:last-child) {
     margin-bottom: 9px;
-}
-
-.logo-web-footer {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--sky);
 }
 
 .logo-studio-footer {
