@@ -316,7 +316,7 @@
   <footer class="footer">
     <div class="container container-double">
       <div>
-        <a class="footer-logo logo-web" href="./index.html">Web</span><span lang="en" class="logo-studio-footer">Studio</span>
+        <a class="footer-logo logo-web" href="./index.html">Web<span lang="en" class="logo-studio-footer">Studio</span>
         </a>
         <address class="contacts-address">
           <ul class="contacts-footer-list">
@@ -366,7 +366,10 @@
           <li class="suscribe-item">
             <input class="suscribe-info-box" type="email" name="email" id="email-suscribe" placeholder="E-mail" />
           </li>
-          <li class="suscribe-item"><button class="btn-suscribe" type="submit">Підписатися</button></li>
+          <li class="suscribe-item"><button class="btn-suscribe" type="submit">Підписатися<svg class="suscribe-icon"
+                width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg></button></li>
         </ul>
       </div>
     </div>
@@ -399,8 +402,7 @@
           </div>
         </div>
 
-        <div class="form-permission"> <input type="checkbox" name="permission" id="permission"
-            placeholder="Введіть текст" />
+        <div class="form-permission"> <input type="checkbox" name="permission" id="permission" />
           <label class="permission" for="permission">Погоджуюся з
             розсилкою та приймаю <span><a class="permission-link" href="#">Умови договору</a></span></label>
         </div>
