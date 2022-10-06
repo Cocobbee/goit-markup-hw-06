@@ -362,21 +362,16 @@
       <!-- Suscribe for email received -->
       <div>
         <p class="suscribe-title">Підпишіться на розсилку</p>
-        <ul class="suscribe-list">
-          <li class="suscribe-item">
-            <input class="suscribe-info-box" type="email" name="email" id="email-suscribe" placeholder="E-mail" />
-          </li>
-
-          <li class="suscribe-item">
-            <button class="btn-suscribe" type="submit">
-              <span class="suscribe-btn-title">Підписатися</span>
-              <span class="suscribe-icon"><svg width="24" height="24">
-                  <use href="./images/sprite.svg#icon-send"></use>
-                </svg></span>
-            </button>
-
-          </li>
-        </ul>
+        <form class="suscribe-list">
+          <label for=""><input class="suscribe-info-box" type="email" name="email" id="email-suscribe"
+              placeholder="E-mail" /></label>
+          <button class="btn-suscribe" type="submit">
+            Підписатися
+            <svg class="suscribe-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+          </button>
+        </form>
       </div>
     </div>
   </footer>
@@ -420,7 +415,6 @@
               </svg>Погоджуюся з
               розсилкою та приймаю<a class="permission-link" href="#">Умови договору</a></span></label>
         </div>
-
         <button class="submit-btn" type="submit">Відправити</button>
       </form>
     </div>

@@ -698,6 +698,7 @@ img {
 .join-us-title {
     margin-bottom: 20px;
     font-size: 14px;
+    font-weight: 700;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -743,6 +744,7 @@ img {
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 16px;
+    font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--regular-white);
@@ -775,11 +777,10 @@ img {
 
 .btn-suscribe {
     display: flex;
-    justify-items: center;
+    justify-content: center;
     gap: 10px;
     overflow: hidden;
     align-items: center;
-    justify-content: center;
     padding-top: 0px;
     width: 216px;
     /* padding: 10px; */
@@ -805,7 +806,6 @@ img {
 }
 
 .suscribe-icon {
-    margin-top: 13px;
 }
 
 /* Modal window */
@@ -980,15 +980,6 @@ img {
     -moz-appearance: none;
     appearance: none;
 }
-
-/* .permission::before {
-    content: '';
-    display: inline-block;
-    width: 16px;
-    height: 15px;
-    border: solid 2px black;
-    border-radius: 2px;
-} */
 
 .customer-checkbox {
     width: 16px;
