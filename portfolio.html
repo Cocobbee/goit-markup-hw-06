@@ -273,12 +273,16 @@
       <!-- Suscribe for email received -->
       <div>
         <p class="suscribe-title">Підпишіться на розсилку</p>
-        <ul class="suscribe-list">
-          <li class="suscribe-item">
-            <input class="suscribe-info-box" type="email" name="email" id="email-suscribe" placeholder="E-mail" />
-          </li>
-          <li class="suscribe-item"><button class="btn-suscribe" type="submit">Підписатися</button></li>
-        </ul>
+        <form class="suscribe-list">
+          <label for=""><input class="suscribe-info-box" type="email" name="email" id="email-suscribe"
+              placeholder="E-mail" /></label>
+          <button class="btn-suscribe" type="submit">
+            Підписатися
+            <svg class="suscribe-icon" width="24" height="24">
+              <use href="./images/sprite.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </div>
   </footer>

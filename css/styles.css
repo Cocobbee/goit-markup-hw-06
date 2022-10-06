@@ -25,6 +25,10 @@ body {
     background-color: var(--regular-white);
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
 h1,
 h2,
 h3 {
@@ -783,8 +787,6 @@ img {
     align-items: center;
     padding-top: 0px;
     width: 216px;
-    /* padding: 10px; */
-
     font-family: inherit;
     cursor: pointer;
     font-weight: 700;
@@ -803,9 +805,6 @@ img {
 .btn-suscribe:hover,
 .btn-suscribe:focus {
     background-color: var(--dark-sky);
-}
-
-.suscribe-icon {
 }
 
 /* Modal window */
@@ -935,7 +934,7 @@ img {
     border-color: var(--sky);
 }
 
-.modal-info-box:focus + .modal-icon {
+.modal-info-box:focus+.modal-icon {
     fill: var(--sky);
 }
 
@@ -960,6 +959,7 @@ img {
 
 .permission {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 10px;
 }
@@ -982,6 +982,7 @@ img {
 }
 
 .customer-checkbox {
+    display: flex;
     width: 16px;
     height: 15px;
     border: solid 2px black;
@@ -989,9 +990,13 @@ img {
     fill: transparent;
 }
 
-.checkbox:checked + .customer-checkbox {
+.checkbox:checked+.customer-checkbox {
     border: none;
     fill: var(--sky);
+}
+
+.checkbox:focus+.customer-checkbox {
+    border-color: var(--sky);
 }
 
 .submit-btn {
